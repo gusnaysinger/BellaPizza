@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./img/img-final.png">
+    <title>Bella Pizza🍕</title>
+</head>
+<body>
+
+    <header>
+    
+        <nav  class="navbar navbar-expand-sm navbar-dark">
+            <div class="container">
+              <a href="index.html" class="navbar-brand">
+                <img src="./img/img-final.png" width="80px"> BELLA PIZZA
+              </a>
+              
+              <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span  class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a href="#" class="nav-link">Inicio</a>
+                  </li>
+                  <li class="nav-item"><a href="#" class="nav-link">Sobre Nós</a>
+                  </li>
+                  <li class="nav-item"><a href="#" class="nav-link">Galeria</a>
+                  </li>
+                  <li class="nav-item"><a href="faleconosco.html" class="nav-link">Fale Conosco</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+        </nav>
+    </header>
+    <div class="corpo">
+        <div class="page">
+            <div class="selectionpage float-start">
+                <table class="ingredients pos">
+                    <tr>
+                        <div class="massa">
+                        <h3>Tamanho</h3>
+                        </div>
+                    </tr>
+                    <tr class="rows">
+                        <div class="buttons justify-content-sm-evenly">
+                            <td>
+                                <button class="opt" id="btnsmall" value="OFF" onclick="pizzasmall()">
+                                    <div class="opt_img"></div>
+                                    <p>Broto <span id="mass_tam">20cm</span></p>
+                                </button>
+                            </td>
+                            <td>
+                                <button class="opt" id="btnmed" value="OFF" onclick="pizzamed()">
+                                    <div class="opt_img1"></div>
+                                    <p>Média <span id="mass_tam">35cm</span></p>
+                                </button>
+                            </td>
+                            <td>
+                                <button class="opt" id="btnbig" value="OFF" onclick="pizzabig()">
+                                    <div class="opt_img2"></div>
+                                    <p>Familia <span id="mass_tam">50cm</span></p>
+                                </button>
+                            </td>
+                        </div>
+                    </tr>
+                </table>
+                <!--<div class="massa">
+                    <h3>Tamanho</h3>
+                </div>
+                <div class="mass">
+                    <div class="buttons justify-content-sm-evenly">
+                        <button class="opt">
+                            <div class="opt_img"></div>
+                            <p>Broto <span id="mass_tam">20cm</span></p>
+                        </button>
+                        <button class="opt">
+                            <div class="opt_img1"></div>
+                            <p>Média <span id="mass_tam">35cm</span></p>
+                        </button>
+                        <button class="opt">
+                            <div class="opt_img2"></div>
+                            <p>Familia <span id="mass_tam">50cm</span></p>
+                        </button>
+                    </div>
+                </div>-->
+                <div class="recheios salgados">
+                    <h3>Sabores</h3><br><span>Salgados</span>
+                </div>
+                <table class="ingredients">
+                    <tr class="rows">
+                        <td>
+                            <button class="opt" value="OFF" id="btnmoltomat" onclick="molhodetomate()">
+                                <div class="opt2_img"><img src="./img/Foods/molho de tomate.png"></div>
+                                <p>Molho</p>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="opt" value="OFF" id="btncalab" onclick="calabresa()">
+                                <div class="opt2_img"><img src="./img/Foods/Calabresa.png"></div>
+                                <p>Calabresa</p>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="opt" value="OFF" id="btnbacon" onclick="bacon()">
+                                <div class="opt2_img"><img src="./img/Foods/Bacon.png"></div>
+                                <p>Bacon</p>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="opt" value="OFF" id="btngal" onclick="galinhadesfiada()">
+                                <div class="opt2_img"><img src="./img/Foods/Chicken.png"></div>
+                                <p>Frango</p>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="opt" value="OFF" id="btnbeef" onclick="beef()">
+                                <div class="opt2_img"><img src="./img/Foods/Beef.png"></div>
+                                <p>Filé</p>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="opt" value="OFF" id="btncheese" onclick="cheese()">
+                                <div class="opt2_img"><img src="./img/Foods/Cheese.png"></div>
+                                <p>Queijo</p>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="opt" value="OFF" id="btnham" onclick="ham()">
+                                <div class="opt2_img"><img src="./img/Foods/Ham.png"></div>
+                                <p>Presunto</p>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="opt" value="OFF" id="btntempverde" onclick="tempverde()">
+                                <div class="opt2_img"><img src="./img/Foods/TemperoVerde.png"></div>
+                                <p>Salsa</p>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="opt" value="OFF" id="btncorn" onclick="corn()">
+                                <div class="opt2_img"><img src="./img/Foods/Corn.png"></div>
+                                <p>Milho</p>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="opt" value="OFF" id="btnolives" onclick="olives()">
+                                <div class="opt2_img"><img src="./img/Foods/Olives.png"></div>
+                                <p>Azeitona</p>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="opt" value="OFF" id="btnbell" onclick="bell()">
+                                <div class="opt2_img"><img src="./img/Foods/BellPepper.png"></div>
+                                <p>Pimentão</p>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="opt" value="OFF" id="btntomato" onclick="tomato()">
+                                <div class="opt2_img"><img src="./img/Foods/Tomato.png"></div>
+                                <p>Tomate</p>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="opt" value="OFF" id="btnpepper" onclick="pepper()">
+                                <div class="opt2_img"><img src="./img/Foods/Pepper.png"></div>
+                                <p>Pimenta</p>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="opt" value="OFF" id="btnbrocollis" onclick="brocollis()">
+                                <div class="opt2_img"><img src="./img/Foods/Broccoli.png"></div>
+                                <p>Brócolis</p>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="opt" value="OFF" id="btncebolinha" onclick="cebolinha()">
+                                <div class="opt2_img"><img src="./img/Foods/Allium.png"></div>
+                                <p>Cebolinha</p>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="opt" value="OFF" id="btnegg" onclick="egg()">
+                                <div class="opt2_img"><img src="./img/Foods/Egg.png"></div>
+                                <p>Ovo</p>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="opt" value="OFF" id="btnoregano" onclick="oregano()">
+                                <div class="opt2_img"><img src="./img/Foods/Oregano.png"></div>
+                                <p>Orégano</p>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="recheios doces">
+                                <h3>Sabores</h3><br><span>Doces</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="opt" value="OFF" id="btnchocolate" onclick="not_implemented()">
+                                <div class="opt2_img"><img src="./img/Doces/Chocolate.png"></div>
+                                <p>Chocolate</p>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="opt" value="OFF" id="btnstrawberry" onclick="not_implemented()">
+                                <div class="opt2_img"><img src="./img/Doces/Strawberry.png"></div>
+                                <p>Morango</p>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="opt" value="OFF" id="btnpineapple" onclick="not_implemented()">
+                                <div class="opt2_img"><img src="./img/Doces/Pineapple.png"></div>
+                                <p>Abacaxi</p>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="food" id="food">
+        <img src="./img/pizzadough.png" id="foodimg">
+        <img src="./img/Ingredients/molhodetomate.png" id="imgmoltomat" class="ingredientimg" style="opacity: 0;">
+        <img src="./img/Ingredients/galinhadesf.png" id="imggaldesf" class="ingredientimg" style="opacity: 0;">
+        <img src="./img/Ingredients/ham.png" id="imgham" class="ingredientimg" style="opacity: 0;">
+        <img src="./img/Ingredients/bacon.png" id="imgbacon" class="ingredientimg" style="opacity: 0;">
+        <img src="./img/Ingredients/file.png" id="imgbeef" class="ingredientimg" style="opacity: 0;">
+        <img src="./img/Ingredients/cheese.png" id="imgcheese" class="ingredientimg" style="opacity: 0;">
+        <img src="./img/Ingredients/calabresa.png" id="imgcalab" class="ingredientimg" style="opacity: 0;">
+        <img src="./img/Ingredients/Brocollis.png" id="imgbrocollis" class="ingredientimg" style="opacity: 0;">
+        <img src="./img/Ingredients/milho.png" id="imgcorn" class="ingredientimg" style="opacity: 0;">
+        <img src="./img/Ingredients/tomates.png" id="imgtomato" class="ingredientimg" style="opacity: 0;">
+        <img src="./img/Ingredients/ovo.png" id="imgegg" class="ingredientimg" style="opacity: 0;">
+        <img src="./img/Ingredients/tempverde.png" id="imgtempverde" class="ingredientimg" style="opacity: 0;">
+        <img src="./img/Ingredients/Azeitonas.png" id="imgolives" class="ingredientimg" style="opacity: 0;">
+        <img src="./img/Ingredients/pimenta.png" id="imgpepper" class="ingredientimg" style="opacity: 0;">
+        <img src="./img/Ingredients/pimentao.png" id="imgbell" class="ingredientimg" style="opacity: 0;">
+        <img src="./img/Ingredients/Cebolinha.png" id="imgcebolinha" class="ingredientimg" style="opacity: 0;">
+        <img src="./img/Ingredients/oregano.png" id="imgoregano" class="ingredientimg" style="opacity: 0;">
+    </div>
+
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+</html>

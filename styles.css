@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+
+.navbar-brand{
+    font-family:'Caveat', cursive;
+    font-size: 50px;
+    
+}
+nav{
+    background-color: #8a0202;
+    z-index: 500;
+}
+.navbar-nav{
+    font-size: 20px;
+}
+.frase{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #180f4a;
+    margin-top: 150px;
+    letter-spacing: 5px
+}
+.frase1{
+
+    font-size: 80px;
+    font-family:'Caveat', cursive ;
+    color: #180f4a;
+    margin-left: 20px;
+    font-weight: 800;
+}
+
+form{
+    margin-top: 100px;
+}
+form h3{
+    text-align: center;
+}
+.formulario{
+    
+    border: 1px solid black;
+    /* background-image: linear-gradient(to right, rgb(20,147,220), rgb(17,54,71)); */
+    border-radius: 4%;
+    font-size: 20px;
+    color: #180f4a;
+    padding: 50px;
+    box-shadow: 3px 3px 1px 0px #00000070;
+}
+
+.mb-3 input {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: inline-block;
+    border: 1;
+    border-bottom: 2px solid #180f4a;
+    outline: none;
+    font-size: 16px;
+
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8a020b;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff2f2f;
+}
+
+/* Corpo Site */
+body {
+    font-family: Ubuntu;
+    overflow: hidden;
+}
+
+corpo {
+    width: 1500px;
+    height: 900px;
+    background-color: white;
+}
+
+.selectionpage  {
+    width: 55vw;
+    height: 100vh;
+    position: relative;
+    top: -50px;
+    border: 0px solid;
+    /*border-bottom-right-radius: 150px 250px;*/
+    background-color: #c1141f;
+    overflow: scroll;
+    overflow-x: hidden;
+    z-index: 10;
+}
+
+.food {
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    border: 0px solid;
+    width: 60%;
+    height: auto;
+    left: 40%;
+    top: 15%;
+    /*width: 750px;
+    height: 750px;
+    left: 500px;
+    top: 100px;*/
+}
+
+.food img {
+    width: 80%;
+    height: auto;
+}
+
+/* imagem ingredientes */
+
+.ingredientimg {
+    position: absolute;
+    border: 0px solid;
+    width: 60%;
+    height: auto;
+    left: 0%;
+    top: 0%;
+}
+
+/* Opções */
+.massa {
+    color: white;
+    font-family: Ubuntu, sans-serif, Arial;
+    position: relative;
+    top: 75px;
+    left: 45px;
+}
+
+.massa h3, .recheios h3 {
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.options {
+    overflow: auto;
+    white-space: nowrap;
+    position: absolute;
+    top: 75px;
+}
+
+.options .opt {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    border: 0px solid;
+    width: 200px;
+    height: 250px;
+    border-radius: 25px;
+    margin: 0 25px 0 25px;
+}
+
+.opt {
+    background-color: white;
+    /*margin: 0 25px 0 25px;*/
+    width: 200px;
+    border: 0px;
+    border-radius: 25px;
+    transition: 0.2s;
+}
+
+.opt:hover {
+    box-shadow: 0px 0px 7px black;
+    transform: scale(1.05);
+}
+
+.buttons {
+    border: 0px solid;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 15%;
+    width: 780px;
+}
+
+.opt p {
+    color: black;
+    font-size: 1.5em;
+}
+
+.opt #mass_tam {
+    color: rgb(114, 114, 114);
+    height: 800;
+    font-size: 0.75em;
+}
+
+.opt_img, .opt_img1, .opt_img2 {
+    border: 0px solid black;
+    border-radius: 50%;
+    background-color: #e2985a;
+    margin: auto;
+}
+
+.opt_img{
+    width: 75px;
+    height: 75px;
+    margin-top: 65px;
+    margin-bottom: 60px;
+
+}
+
+.opt_img1{
+    width: 120px;
+    height: 120px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.opt_img2{
+    width: 150px;
+    height: 150px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* Sabores */
+.ingredients {
+    position: absolute;
+    top: 500px;
+    border: 0px solid;
+    width: 98%;
+    left: 45px;
+    border-collapse: separate;
+    border-spacing: 0 30px;
+}
+
+.ingredients tr {
+    margin-bottom: 15px;
+}
+
+.pos {
+    top: 75px;
+}
+
+.recheios {
+    color: white;
+    font-family: Ubuntu, sans-serif, Arial;
+    position: relative;
+}
+
+.salgados {
+    top: 340px;
+    left: 45px;
+}
+
+.salgados span {
+    top: 45px;
+}
+
+.recheios span {
+    color: rgb(202, 202, 202);
+    font-size: 2em;
+    font-weight: 400;
+    position: absolute;
+}
+
+.opt img {
+    width: 150px;
+    height: 150px;
+}
+
+.doces span {
+    top: 45px;
+}
